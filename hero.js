@@ -38,7 +38,7 @@ The "move" function should accept two arguments that the website will be passing
 // Strategy definitions
 var moves = {
     // Aggressor
-    aggressor: function (gameData, helpers) {
+    aggressor: function (gameData, helpers) {   
         // Here, we ask if your hero's health is below 30
         if (gameData.activeHero.health <= 30){
             // If it is, head towards the nearest health well
@@ -176,11 +176,11 @@ var moves = {
     // This hero will try really hard not to die.
     coward: function (gameData, helpers) {
         return helpers.findNearestHealthWell(gameData);
-    }
+    },
 };
 
 // Set our hero's strategy
-var move =  moves.aggressor;
+var move =  moves.carefulAssassin;
 
 // Export the move function here
 module.exports = move;
