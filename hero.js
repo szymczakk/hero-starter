@@ -180,7 +180,7 @@ var moves = {
 };
 
 // Set our hero's strategy
-var move =  moves.carefulAssassin;
+var move =  moves.aggressor;
 
 // Export the move function here
 module.exports = move;
